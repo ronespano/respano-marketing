@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ron Españo | Marketing Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Ron Españo</h1>
-    <p>Marketing, Content & Remote Ops Specialist</p>
+  <header class="site-header animate-text">
+    <div class="container">
+      <h1>Ron Españo</h1>
+      <p>Marketing, Content, and Operations Specialist</p>
+      <button id="toggle-dark">Toggle Dark Mode</button>
+    </div>
   </header>
- 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>I’m a remote marketing and support professional with 5+ years in digital campaigns, content creation, and customer engagement. I’ve worked with clients in the U.S., Canada, and Australia—helping brands grow through lean strategy, automation, and strong messaging.</p>
-  </section>
 
-  <section class="skills">
-    <h2>Skills</h2>
+  <nav id="navbar">
     <ul>
-      <li><strong>Marketing Tools:</strong> Meta Ads, Canva, Mailchimp, Google Ads</li>
-      <li><strong>CRM & Automation:</strong> HubSpot, Salesforce, Intercom, Zendesk</li>
-      <li><strong>Content & Writing:</strong> SEO, Copywriting, Email Campaigns, Social Media Captions</li>
-      <li><strong>Certifications:</strong> Google Digital Marketing, AI Essentials, TESOL, Xactimate</li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#competencies">Core Competencies</a></li>
+      <li><a href="#studies">Studies</a></li>
+      <li><a href="#samples">Samples</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
+  </nav>
+
+  <section id="about" class="section animate-text">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium tortor ac turpis tincidunt.</p>
+      <div class="social-icons">
+        <a href="mailto:espanoronmiguel@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ron-espano/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ronespano" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <form class="contact-form">
+        <h3>Send a Message</h3>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </section>
 
-  <footer>
-    <p>Contact: espanoronmiguel@gmail.com | <a href="https://www.linkedin.com/in/ron-espano/">LinkedIn</a></p>
-  </footer>
+  <section id="competencies" class="section">
+    <div class="container">
+      <h2>Core Competencies</h2>
+      <ul>
+        <li>Digital Marketing & Paid Ads</li>
+        <li>CRM Systems & Email Campaigns</li>
+        <li>Customer Experience Optimization</li>
+        <li>Project & Workflow Management</li>
+        <li>Technical Writing & Documentation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="studies" class="section">
+    <div class="container">
+      <h2>Studies</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius dapibus justo.</p>
+    </div>
+  </section>
+
+  <section id="samples" class="section">
+    <div class="container">
+      <h2>Samples of My Work</h2>
+      <div class="sample-grid">
+        <div class="sample">
+          <img src="https://source.unsplash.com/800x500/?marketing,office" alt="Sample Work 1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="sample">
+          <img src="https://source.unsplash.com/800x500/?branding,design" alt="Sample Work 2">
+          <p>Curabitur et diam nec nulla viverra varius vel in tortor.</p>
+        </div>
+        <div class="sample">
+          <img src="https://source.unsplash.com/800x500/?technology,workspace" alt="Sample Work 3">
+          <p>Fusce porta mauris nec lorem pretium, id ultrices lorem porttitor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:espanoronmiguel@gmail.com">espanoronmiguel@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/ron-espano/">linkedin.com/in/ron-espano</a></p>
+      <p>GitHub: <a href="https://github.com/ronespano">github.com/ronespano</a></p>
+    </div>
+  </section>
 </body>
 </html>
